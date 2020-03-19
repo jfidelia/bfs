@@ -13,6 +13,7 @@ queue = []     #Initialize a queue
 def bfs(visited, graph, node):
   visited.append(node)
   queue.append(node)
+  print(visited, graph, node)
 
   while queue:
     s = queue.pop(0) 
@@ -24,4 +25,4 @@ def bfs(visited, graph, node):
         queue.append(neighbour)
 
 # Driver Code
-bfs(visited, graph, 'A')
+bfs(visited, graph, 'B')
